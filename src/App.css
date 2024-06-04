@@ -1,38 +1,122 @@
-.App {
+*{
+  margin:0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* In your CSS file (e.g., Horizontal.css) */
+.slanted-line {
+  border-top: 1px solid #093523;
+  width: 50px;
+  margin-top: 80px;
+  margin-left: -70px; 
+}
+
+
+.horizontal-line {
+  border-top: 1px solid #093523;
+  width: 50px;
+  margin-top: 85px;
+  margin-left: -70px; /* Adjust margin as needed */
+}
+
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 2px 6px 2px  rgba(100, 0, 0, 0.2);
+  width:290px;
+  height:200px;
+  padding:20px;
+  margin: 0 10px;
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container {
+
+  position: relative;
+  top:-40px
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image {
+  
+  width: 50px;
+  height: 50px; 
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.icon {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.slider {
+  position: absolute;
+  top: 0px;
+  right: 80%;
+  width: 120px;
+  height: auto;
+  color:white;
+  background-color:#FF5733;
+  /* box-shadow: 5px 10px 5px 5px rgba(155, 193, 246, 0.5); */
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .close-icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+} */
+
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 2px 1px 4px 2px rgba(120, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
+
+
+.vertical-line {
+  position: relative;
+  width: 2px;
+  top:40px;
+  height: 350px; /* Adjust height as needed */
+  background-color: #093523;
+  margin: 0 50px; /* Adjust margin as needed */
+}
+
+.dot {
+  position: absolute;
+  top: 60px; /* Adjust vertical position of dots */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #FF5733;
+  border-radius: 50%;
+}
+
+.dot:nth-child(2) {
+  top: calc(73% - 10px); /* Adjust vertical position of second dot */
+}
+
+@keyframes blinkingUp {
+  0% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+@keyframes blinkingDown {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+
+
