@@ -1,7 +1,7 @@
 // Slider.js
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Slider = () => {
@@ -23,9 +23,7 @@ const Slider = () => {
       </div>
       {isOpen && (
         <div className="slider">
-          {/* <div className="close-icon" onClick={toggleSlider}>
-            <FontAwesomeIcon icon={faTimes} color="#093523" size="2x" />
-          </div> */}
+         
           <p><a href="#home" style={{textDecoration:'none',color:'#eee',letterSpacing:'0.5px'}}>Home</a></p>
           <p><a href="#skills" style={{textDecoration:'none',color:'#eee',letterSpacing:'0.5px'}}>Skills</a></p>
           <p><a href="#education" style={{textDecoration:'none',color:'#eee',letterSpacing:'0.5px'}}>Education</a></p>

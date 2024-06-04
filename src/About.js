@@ -10,7 +10,7 @@ export const About = () => {
           <img className='mb-2' src={me} alt=" " height="100px" width="100px" style={{ borderRadius: '50%' }}></img>
           <h5 style={{ lineHeight: '24px', fontWeight: 'bold', color: 'white' }}>Kavya H S</h5>
           <div style={{ width: '40px', borderBottom: '2px solid #FF5733', position: 'relative', bottom: '-2px', left: '40%' }}></div>
-          <h6 className="pt-4" style={{ letterSpacing: '2px', fontStyle: 'normal', fontSize: '14px', color: '#eee',fontStyle:'italic' }}>Software Engineer</h6>
+          <h6 className="pt-4" style={{ letterSpacing: '2px', fontSize: '14px', color: '#eee',fontStyle:'italic' }}>Software Engineer</h6>
           <h6 style={{ letterSpacing: '2px', fontStyle: 'normal', fontSize: '12px', color: '#eee' }}><a href="mailto:kavyakavyagowda80@gmail.com" style={{textDecoration:"none"}}>kavyakavyagowda80@gmail.com</a></h6>
           <h6 style={{ letterSpacing: '2px', fontStyle: 'normal', fontSize: '12px', color: '#eee' }}>8310241431</h6>
         </div>
